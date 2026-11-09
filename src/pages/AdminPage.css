@@ -1,0 +1,47 @@
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.admin-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-card {
+  padding: 1.3rem;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(17, 27, 40, 0.08);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.admin-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 0.7rem;
+}
+
+.admin-card-head h3 {
+  margin-top: 0.5rem;
+}
+
+.admin-card p {
+  color: #36506f;
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 640px) {
+  .admin-card-head {
+    flex-direction: column;
+  }
+}
